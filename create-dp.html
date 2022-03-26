@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DP Generator</title>
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/create-style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/themify-icons.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Source+Sans+Pro&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body style="background-color: #6bd1bd;" class="sub_page">
+	<div class="hero_area">
+	  <!-- header section strats -->
+	  <header class="header_section">
+		<div class="container-fluid">
+		  <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+			<a class="navbar-brand" href="index.html">
+			  <img src="images/logo.png" alt="" />
+			  <span>
+				Team-Bracket
+			  </span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav ml-auto mr-2">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html">About </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="service.html">Services</a>
+				</li>
+  
+				<li class="nav-item">
+				  <a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="call_btn">
+			  <a href="">
+				Call: +2349040931311
+			  </a>
+			</div>
+		  </nav>
+		</div>
+	  </header>
+	  <!-- end header section -->
+  
+  
+	</div>
+  
+	<!-- custom menu -->
+	<div class="custom_menu-container">
+	  <div class="container">
+		<div class="custom_menu">
+		  <ul class="navbar-nav ">
+			<li class="nav-item active">
+			  <a class="nav-link pl-0" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html">About</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="service.html">Services</a>
+			</li>
+  
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contact</a>
+			</li>
+		  </ul>
+		  
+		</div>
+	  </div>
+	</div>
+  
+	<!-- custom menu -->
+	
+	<main class="container py-5">
+	<header class="mb-2">
+		<h1>Generate Your DP (Display Picture)</h1>
+	</header>
+		<div class="row">
+			<section class="col-sm-6 col-md-6 under">
+				<div>
+					<h2 style="color:rgb(255, 189, 66); font-weight: 600;">Display Picture (DP) Generator</h2>
+					<p>Upload photo to create your DP</p>
+					<p class="step">To generate your personalized DP</p>
+				</div>
+				<ul>
+					<li class="ti">Enter your name in the name field below</li>
+					<li class="ti">Upload your picture (for best experience, crop the picture to square)</li>
+					<li class="ti">Click on Create your own DP</li>
+				</ul>
+			</section>
+	
+			<section class="col-sm-6 col-md-6 top">
+				<form enctype="multipart/form-data" action="" method="POST" onsubmit="event.preventDefault();">
+					<fieldset>
+						<legend class="ti-camera" style="color: rgb(255, 189, 66); padding-top: 5px;"></legend>
+						<div class="form-input-control">
+							<input placeholder="Name" required="" id="fullname" name="fullname" type="text">
+						</div>
+						<div class="image-editor">
+							<!-- <input type="file" class="cropit-image-input"> -->
+							<span class="btn btn-input fileinput-button" style="background-color:#6bd1bd; width:97%;">
+								<i class="ti-camera" style="color: rgb(177, 20, 72);"></i>
+								<span>Choose an image...</span>
+								<input id="file" name="file" type="file" class="cropit-image-input" required="">
+								<input type="hidden" name="image-data" class="hidden-image-data" />
+							</span>
+							<div class="form-input-control">
+								<button type="reset" class="btn btn-input change hide">
+									<i class="ti-image"></i>
+									<span>Change Image</span>
+								</button>
+								<button type="button" class="btn btn-input delete hide">
+									<i class="ti-cancel"></i>
+									<span>Remove</span>
+								</button>
+							</div>
+							<div class="cropit-preview"></div>
+							<div class="image-size-label" style="color: #6bd1bd">
+								Resize image
+							</div>
+							<input type="range" class="cropit-image-zoom-input">
+							<input type="hidden" name="image-data" class="hidden-image-data" />
+						</div>
+						<div class="button">
+							<button value="submit" type="submit" class="kb-button create-dp">Create your own DP</button>
+						</div>
+					</fieldset>
+				</form>
+	
+			</section>
+		</div>
+	</main>
+
+  <!-- info section -->
+  <section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_links pl-lg-5">
+            <h4>
+              Menu
+            </h4>
+            <ul>
+              <li class="active">
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="" href="service.html">Services</a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h4>
+              Location
+            </h4>
+            <div>
+              <img src="images/location.png" alt="" />
+              <p>
+                104 loram ipusm
+              </p>
+            </div>
+            <div>
+              <img src="images/telephone.png" alt="" />
+              <p>
+                ( +01 1234567890 )
+              </p>
+            </div>
+            <div>
+              <img src="images/envelope.png" alt="" />
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h4>
+              Social Link
+            </h4>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <img src="images/facebook-logo.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="http://twitter.com/son_of_yahyah">
+					<img src="images/twitter-logo.png" alt="" />
+				  </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/instagram.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/linkedin-sign.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_form">
+            <h4>
+              Newsletter
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Enter Your Email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2019 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cropit.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- <script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/circles.min.js"></script>
+	<script src="js/custom.js"></script> -->
+</body>
+
+</html>
