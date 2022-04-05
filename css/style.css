@@ -38,7 +38,9 @@ body {
   font-weight: 700;
   position: relative;
 }
-
+.navbar-brand img{
+  width: 150px !important;
+}
 .custom_heading-container h2::before {
   content: "";
   width: 60px;
